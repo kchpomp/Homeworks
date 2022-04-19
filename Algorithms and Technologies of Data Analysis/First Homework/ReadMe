@@ -1,0 +1,9 @@
+Here are several files that allow to perform two operations.
+
+First one creates a binary file of size 3 GB using randint function by generating numbers one by one - this file is named create_binary_file.ipynb.
+
+Second one allows to read binary file in numpy array of int32, find the minimum number, the maximun number and the sum of all elements of the array.
+Moreover, there are two variants. Firstly, these operations are held sequently. Then, the same operations are held simultaneously using ThreadPoolExecutor 
+for sum and two threads for minimum and maximum.
+
+As a result, there is an increase around 20-25 % when using ThreadpoolExecutor on a laptop with IntelCore I7-6700HQ with 6 cores.
