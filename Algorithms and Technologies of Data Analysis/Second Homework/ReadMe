@@ -1,0 +1,14 @@
+In this directory are contained several programs.
+
+1)create_int_lines_files - this programm creates two files: line_numbers.csv and line_numbers_golang.csv that contain 2000 lines of random int32 numbers.
+2)read_lines_multi - this programm reads file, then directly computes the numbers of factors of all numbers that are contained in the csv file, the 
+  second approach in this programm splits this file into several parts to make computations faster, the third approach is using concurrent computations
+  with the help of processes. The test have shown that third aprroach is the fastest among three of the abovementioned, takes ~4-5 seconds to execute and
+  outperformes the two other approaches almost twice.
+3)dask_read_lines - this programm reads csv file into Pandas DataFrame, then converts it to the Dask Dataset splitting it into several parts and then
+  applies to the each part factorization and counts the sum of length of each row. This approach does not practically outperform concurrent computations
+4)read_files_factor - this programm is written via Golang and is the fastest one among other programms. It takes ~90 ms to execute this programm and count 
+  on how many factors are split all numbers in the file.
+  
+  
+Finally, the fastest programm is written in the Golang language.
