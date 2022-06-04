@@ -1,0 +1,9 @@
+This homework shows decomposition of cik.csv file decomposition using Dask.
+
+In this homework different operations with dataset are provided:
+  1) Has been found presense in each region;
+  2) Dataset was sorted in descending order according to presense;
+  3) Has been chosen a candidate and was found the TIK where he received the most votes;
+  4) Has been found a region with the highest presense difference;
+  5) For each region has been found presense dispersion;
+  6) Has been created a table with results of each candidate and amount of TIK's where his result was not 0;
